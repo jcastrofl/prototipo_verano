@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Mi verano · Universidad Continental</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=DM+Sans:wght@400;500;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<div class="aviso-datos" role="note">Prototipo: el ingreso, los estudiantes, la oferta y las solicitudes son de demostración. No se envía nada a la universidad.</div>
+<header class="cabecera">
+  <div class="envoltura cabecera-fila">
+    <a class="marca" href="index.html" aria-label="Volver a la página de cursos de verano">
+      <img class="logo" src="https://adistancia.ucontinental.edu.pe/assets/img/logo.svg" alt="Universidad Continental · Modalidad A Distancia" onerror="this.parentElement.classList.add('sin-logo');this.remove()">
+      <span class="marca-texto"><b>Universidad Continental</b><span>Modalidad A Distancia</span></span>
+    </a>
+    <div class="usuario oculto" id="usuario"><div class="avatar" id="avatar" aria-hidden="true"></div><button class="btn-texto" type="button" id="btn-salir">Cerrar sesión</button></div>
+  </div>
+</header>
+
+<!-- Ingreso -->
+<section class="hero" id="ingreso">
+  <div class="hero-texto">
+    <span class="pastilla-acento">MI VERANO 2027</span>
+    <h1>Ingresa para simular y solicitar tus cursos de verano</h1>
+    <p class="hero-sub">Verás tu avance, tu malla y los cursos que puedes llevar según tus prerrequisitos.</p>
+    <div class="hero-acciones"><button class="btn btn-blanco" type="button" id="btn-google">Ingresar con Google (@continental.edu.pe)</button></div>
+    <p class="hero-nota">Solo tú puedes ver tu información académica.</p>
+  </div>
+  <div class="hero-afiche">
+    <img class="foto" src="https://ucontinental.edu.pe/site/wp-content/themes/salient-child/img/home-img-1.webp" alt="" onerror="this.remove()">
+    <div class="afiche-titulo" aria-hidden="true"><i></i><div><span class="l1">Simula</span><span class="l2">Solicita</span><span class="l3">y matricúlate</span></div></div>
+  </div>
+</section>
+
+<!-- Área privada -->
+<div id="app" class="oculto">
+  <section class="bienvenida"><div class="envoltura" id="bienvenida"></div></section>
+  <nav class="pasos-nav" aria-label="Pasos"><div class="envoltura" id="pasos-nav"></div></nav>
+  <main class="vista"><div class="envoltura" id="vista" tabindex="-1"></div></main>
+  <div class="barra-movil oculto" id="barra-movil"></div>
+</div>
+
+<div id="modal"></div>
+
+<footer class="pie"><div class="envoltura pie-fila"><span>Universidad Continental · Modalidad A Distancia</span><span>Prototipo con datos de ejemplo</span></div></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js" defer></script>
+<script src="js/config.js"></script>
+<script src="js/datos-prototipo.js"></script>
+<script src="js/api.js"></script>
+<script src="js/simulador.js"></script>
+<script src="js/pdf.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
